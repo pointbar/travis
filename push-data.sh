@@ -1,4 +1,7 @@
 #! /usr/bin/env bash
 
-google-chrome-stable --headless --disable-gpu --dump-dom "http://localhost:8000" > test.html
-cat test.html
+url="http://localhost:8000"
+file="test.html"
+
+google-chrome-stable --headless --disable-gpu --dump-dom $url > $file
+cat $file
