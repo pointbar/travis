@@ -1,9 +1,6 @@
 #! /usr/bin/env bash
 
 url="http://localhost:8000"
-file="test.html"
-file1="test1.html"
+file="lanzarot"
 
-cat $file > $file1
-cat $file
-cat $file1
+google-chrome-stable --headless --disable-gpu --dump-dom "http://localhost:8000/#"$pageName > $pageName".html"
