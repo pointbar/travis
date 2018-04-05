@@ -6,5 +6,5 @@ before_script:
   - python -m SimpleHTTPServer &
   - sleep 2
 script:
-  - google-chrome-stable --headless --disable-gpu --dump-dom "http://localhost:8000 > test.html
+  - google-chrome-stable --headless --disable-gpu --dump-dom "http://localhost:8000" > test.html
   - ./push-data.sh
