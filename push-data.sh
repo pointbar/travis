@@ -3,5 +3,5 @@
 url="http://localhost:8000"
 file="test.html"
 
-google-chrome-stable --headless --disable-gpu --dump-dom $url > $file
+google-chrome-stable --headless --disable-gpu --dump-dom $url > test.html
 cat $file
